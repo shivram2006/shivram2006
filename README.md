@@ -1,6 +1,6 @@
 <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Shiv Ram Sharma"/>
+  <img src="header.svg" width="100%" alt="Shiv Ram Sharma"/>
 </p>
 
 <p align="center">
@@ -176,5 +176,5 @@ System Design · Scalable Architecture · Advanced Backend · AI Integration
 
 <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
 <p align="center">
-  <img src="./assets/footer.svg" width="100%" alt="footer"/>
+  <img src="footer.svg" width="100%" alt="footer"/>
 </p>
