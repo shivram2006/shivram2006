@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d9ff"/>
+      <stop offset="50%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#0f0c29"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="1200" height="120"/></clipPath>
+    <style>
+      .w { animation: slide 10s linear infinite; }
+      @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-1200px); } }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <g class="w">
+      <path fill="url(#bg)" d="M0 40 Q150 10 300 40 T600 40 T900 40 T1200 40 T1500 40 T1800 40 T2100 40 T2400 40 V120 H0 Z"/>
+    </g>
+  </g>
+</svg>

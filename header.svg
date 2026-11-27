@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="55%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#00d9ff"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#a5f3ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="1200" height="260"/></clipPath>
+    <style>
+      .wave1 { animation: slide 9s linear infinite; }
+      .wave2 { animation: slide 14s linear infinite reverse; }
+      @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-1200px); } }
+      .title { font: 800 64px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; letter-spacing: 2px;
+               animation: rise 1.4s ease-out .2s backwards; }
+      .sub   { font: 500 19px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; letter-spacing: 3px;
+               animation: rise 1.4s ease-out .9s backwards; }
+      @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+      .star { animation: twinkle 3s ease-in-out infinite; }
+      .s2 { animation-delay: .8s; } .s3 { animation-delay: 1.6s; } .s4 { animation-delay: 2.2s; }
+      @keyframes twinkle { 0%,100% { opacity: .15; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="260" fill="url(#bg)"/>
+
+    <!-- twinkling stars -->
+    <g fill="#ffffff">
+      <circle class="star"    cx="90"   cy="40"  r="2"/>
+      <circle class="star s2" cx="260"  cy="90"  r="1.5"/>
+      <circle class="star s3" cx="420"  cy="30"  r="2"/>
+      <circle class="star s4" cx="780"  cy="50"  r="1.5"/>
+      <circle class="star"    cx="950"  cy="25"  r="2"/>
+      <circle class="star s3" cx="1110" cy="80"  r="1.5"/>
+      <circle class="star s2" cx="640"  cy="18"  r="1.5"/>
+    </g>
+
+    <!-- moving waves (each path is 2400px wide = two repeats) -->
+    <g class="wave2" opacity="0.35">
+      <path fill="#0d1117" d="M0 210 Q150 175 300 210 T600 210 T900 210 T1200 210 T1500 210 T1800 210 T2100 210 T2400 210 V260 H0 Z"/>
+    </g>
+    <g class="wave1" opacity="0.9">
+      <path fill="#0d1117" d="M0 230 Q150 200 300 230 T600 230 T900 230 T1200 230 T1500 230 T1800 230 T2100 230 T2400 230 V260 H0 Z"/>
+    </g>
+
+    <!-- text -->
+    <text class="title" x="600" y="118" text-anchor="middle" fill="url(#txt)">Shiv Ram Sharma</text>
+    <text class="sub" x="600" y="160" text-anchor="middle" fill="#e0f7ff">CEO &amp; FOUNDER @ CODINGNOVAS  •  SOFTWARE DEVELOPER  •  TECH ENTREPRENEUR</text>
+  </g>
+</svg>
